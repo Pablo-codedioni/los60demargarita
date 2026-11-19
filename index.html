@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feliz cumpleaños 60, Margarita</title>
+
+<!-- Vista previa al compartir por WhatsApp (funciona al publicar en tu propio hosting) -->
+<meta property="og:title" content="¡Feliz cumpleaños 60, Margarita!">
+<meta property="og:description" content="Domingo 20 de diciembre · 3:00 pm. ¡No te lo puedes perder! Confirma tu asistencia aquí.">
+<meta property="og:image" content="https://pablo-codedioni.github.io/los60demargarita/img/portada-whatsapp.jpg">
+<meta property="og:url" content="https://pablo-codedioni.github.io/los60demargarita/">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:#fbf7f0; --paper:#fffdf9; --sage:#8fa98a; --green:#4f6b4a; --rose:#d9a5a0; --rose-dk:#a8615b;
+    --gold:#c39a52; --ink:#3f3a34; --muted:#7a7068; --line:#eadfce;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{margin:0;font-variant-numeric:lining-nums;background:var(--cream);color:var(--ink);font-family:Poppins,system-ui,sans-serif;font-size:18px;line-height:1.6}
+  .wrap{max-width:560px;margin:0 auto;padding:0 22px}
+  svg.flor{display:block}
+
+  /* ---------- Portada ---------- */
+  .hero{position:relative;text-align:center;padding:70px 24px 60px;background:var(--paper);border-bottom:1px solid var(--line);overflow:hidden}
+  .hero .f{position:absolute;pointer-events:none}
+  .welcome{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:5px;font-size:15px;color:var(--green);margin:0}
+  .feliz{font-family:"Great Vibes",cursive;font-size:44px;line-height:1.1;color:var(--rose-dk);margin:14px 0 0}
+  .sixty{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:150px;line-height:.95;color:var(--gold);margin:4px 0 0}
+  .anos{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:8px;font-size:16px;color:var(--gold);margin:0}
+  .name{font-family:"Great Vibes",cursive;font-size:60px;line-height:1.15;color:var(--green);margin:18px 0 0}
+  .apellidos{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:4px;font-size:17px;color:var(--green);margin:0;text-transform:uppercase}
+  .reflex{text-align:center;font-family:"Cormorant Garamond",serif;font-size:23px;line-height:1.5;color:var(--ink);margin:0}
+  .reflex em{color:var(--rose-dk)}
+  .lema{font-family:"Cormorant Garamond",serif;font-size:22px;font-style:italic;color:var(--ink);margin:10px 0 0}
+  .date-pill{display:inline-block;white-space:nowrap;font-size:15px;margin-top:24px;padding:10px 18px;border:1.5px solid var(--gold);border-radius:999px;font-weight:500;color:var(--ink);background:var(--cream)}
+
+  /* ---------- Secciones ---------- */
+  section{padding:46px 0 6px}
+  .divider{display:flex;justify-content:center;margin-bottom:6px}
+  h2{font-family:"Great Vibes",cursive;font-weight:400;font-size:42px;line-height:1.2;text-align:center;margin:0;color:var(--green)}
+  .sub{text-align:center;color:var(--muted);margin:2px 0 22px;font-size:16px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}
+
+  .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .cd{background:var(--paper);border:1px solid var(--line);border-radius:14px;text-align:center;padding:12px 4px}
+  .cd b{display:block;font-family:"Cormorant Garamond",serif;font-size:36px;line-height:1.1;color:var(--rose-dk)}
+  .cd span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+
+  .info-row{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line)}
+  .info-row:last-of-type{border-bottom:0}
+  .ico{flex:0 0 44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#eef3ec;font-size:20px}
+  .info-row p{margin:0}.info-row small{color:var(--muted);font-size:15px}
+  .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font:600 15px Poppins,sans-serif;white-space:nowrap;
+       padding:14px 8px;border-radius:14px;border:1.5px solid var(--green);color:var(--green);background:transparent;cursor:pointer}
+  .btn.solid{background:var(--green);color:#fff}
+
+  .timeline{list-style:none;margin:0;padding:0}
+  .timeline li{display:flex;gap:16px;align-items:center;padding:12px 0}
+  .timeline .hr{flex:0 0 78px;font-family:"Cormorant Garamond",serif;font-weight:700;font-size:22px;color:var(--rose-dk);text-align:right}
+  .timeline .dot{flex:0 0 26px}
+  .timeline .txt b{display:block}
+  .timeline .txt small{color:var(--muted);font-size:15px}
+  .nota{text-align:center;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:21px;color:var(--green);margin:16px 0 0}
+
+  .fotos{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:6px}
+  .pol{background:#fff;padding:8px 8px 34px;border-radius:4px;box-shadow:0 6px 18px rgba(63,58,52,.12);position:relative}
+  .pol:nth-child(1){transform:rotate(-3deg)}.pol:nth-child(2){transform:rotate(2.5deg)}
+  .pol img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+  .pol span{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-family:"Great Vibes",cursive;font-size:20px;color:var(--ink)}
+  .dress{margin-top:22px;text-align:center;font-size:16px;color:var(--muted)}
+  .dress b{color:var(--rose-dk)}
+
+  /* ---------- Formulario sencillo ---------- */
+  .q{font-weight:600;font-size:19px;margin:22px 0 10px}
+  .q:first-of-type{margin-top:6px}
+  input[type=text],textarea{width:100%;font:18px Poppins,sans-serif;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;outline:none}
+  input[type=text]:focus,textarea:focus{border-color:var(--sage);box-shadow:0 0 0 4px rgba(143,169,138,.25)}
+  textarea{min-height:96px;resize:vertical}
+  .yn{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .opt{font:600 19px Poppins,sans-serif;padding:18px 8px;border-radius:16px;border:2px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+  .opt.on.si{border-color:var(--green);background:#eef3ec;color:var(--green)}
+  .opt.on.no{border-color:var(--rose);background:#faefed;color:var(--rose-dk)}
+  .stepper{display:flex;align-items:center;justify-content:center;gap:22px}
+  .stepper button{width:60px;height:60px;border-radius:50%;border:2px solid var(--green);background:#fff;color:var(--green);font:600 30px Poppins,sans-serif;cursor:pointer;line-height:1}
+  .stepper output{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:48px;min-width:60px;text-align:center;color:var(--ink)}
+  .hint{text-align:center;color:var(--muted);font-size:15px;margin:6px 0 0}
+  .opcional{font-weight:400;color:var(--muted);font-size:15px}
+  .err{color:#b3261e;font-size:16px;margin:12px 0 0;min-height:22px;text-align:center}
+  .deadline{background:#faf3e6;border:1px solid #ecd9b4;color:#8a6a2f;border-radius:12px;padding:10px 14px;font-size:15px;text-align:center}
+  .enviar{width:100%;margin-top:8px;font-size:19px;padding:18px}
+  #gracias{display:none;text-align:center}
+  #gracias .big{font-family:"Great Vibes",cursive;font-size:56px;color:var(--rose-dk);margin:0}
+  #waBox{display:none;text-align:center;margin-top:14px;font-size:15px;color:var(--muted)}
+
+  .gift{text-align:center}
+  footer{text-align:center;padding:40px 20px 60px;color:var(--muted);font-size:15px}
+  footer .sig{font-family:"Great Vibes",cursive;font-size:34px;color:var(--green);display:block;margin-top:4px}
+  @media (max-width:380px){.sixty{font-size:120px}.name{font-size:50px}.cd b{font-size:28px}}
+</style>
+</head>
+<body>
+
+<!-- Flores reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="margarita" viewBox="-50 -50 100 100">
+      <g fill="#fff" stroke="#e6dccb" stroke-width="1.2">
+        <ellipse rx="9" ry="24" cy="-24"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(30)"/>
+        <ellipse rx="9" ry="24" cy="-24" transform="rotate(60)"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(90)"/>
+        <ellipse rx="9" ry="24" cy="-24" transform="rotate(120)"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(150)"/>
+        <ellipse rx="9" ry="24" cy="-24" transform="rotate(180)"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(210)"/>
+        <ellipse rx="9" ry="24" cy="-24" transform="rotate(240)"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(270)"/>
+        <ellipse rx="9" ry="24" cy="-24" transform="rotate(300)"/><ellipse rx="9" ry="24" cy="-24" transform="rotate(330)"/>
+      </g>
+      <circle r="13" fill="#f2c14e"/><circle r="13" fill="none" stroke="#d9a032" stroke-width="2" stroke-dasharray="2 3"/>
+    </symbol>
+    <symbol id="rama" viewBox="0 0 120 60">
+      <path d="M5 50 C40 40 80 30 115 8" stroke="#6f8f69" stroke-width="2.5" fill="none"/>
+      <g fill="#8fa98a">
+        <ellipse cx="30" cy="38" rx="11" ry="5" transform="rotate(-35 30 38)"/><ellipse cx="38" cy="48" rx="11" ry="5" transform="rotate(20 38 48)"/>
+        <ellipse cx="60" cy="27" rx="11" ry="5" transform="rotate(-35 60 27)"/><ellipse cx="68" cy="38" rx="11" ry="5" transform="rotate(20 68 38)"/>
+        <ellipse cx="88" cy="17" rx="10" ry="4.5" transform="rotate(-40 88 17)"/><ellipse cx="96" cy="27" rx="10" ry="4.5" transform="rotate(15 96 27)"/>
+      </g>
+    </symbol>
+    <symbol id="adorno" viewBox="0 0 160 40">
+      <use href="#rama" x="0" y="8" width="64" height="32" transform="scale(-1 1) translate(-64 0)"/>
+      <use href="#margarita" x="62" y="2" width="36" height="36"/>
+      <use href="#rama" x="96" y="8" width="64" height="32"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ PORTADA ============ -->
+<header class="hero">
+  <svg class="f" style="top:-10px;left:-14px" width="150" height="120" viewBox="0 0 150 120">
+    <use href="#rama" x="0" y="40" width="120" height="60" transform="rotate(-20 60 70)"/>
+    <use href="#margarita" x="10" y="0" width="70" height="70"/><use href="#margarita" x="70" y="30" width="44" height="44"/>
+  </svg>
+  <svg class="f" style="bottom:-6px;right:-14px" width="160" height="120" viewBox="0 0 160 120">
+    <use href="#rama" x="20" y="40" width="130" height="65" transform="rotate(160 85 72)"/>
+    <use href="#margarita" x="80" y="40" width="76" height="76"/><use href="#margarita" x="40" y="70" width="44" height="44"/>
+  </svg>
+
+  <p class="welcome">BIENVENIDOS</p>
+  <p class="feliz">Feliz cumpleaños</p>
+  <p class="sixty">60</p>
+  <p class="anos">AÑOS</p>
+  <p class="name" id="nombre">Margarita</p>
+  <p class="apellidos">Cahuantzi Zecua</p>
+  <p class="lema">¡No te lo puedes perder!<br>Una fiesta única</p>
+  <div class="date-pill">Domingo 20 de diciembre · 3:00 pm</div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ REFLEXIÓN ============ -->
+  <section>
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Momentos únicos</h2>
+    <div class="card" style="margin-top:16px">
+      <p class="reflex">La vida está hecha de momentos que no se repiten. Hoy celebramos <em>60 años</em> de risas, de esfuerzo y de mucho amor, y queremos vivir uno más contigo.</p>
+      <p class="reflex" style="margin-top:14px">Porque lo más valioso no se guarda para después: se disfruta hoy, mientras estamos aquí, con la gente que queremos.</p>
+      <p class="nota" style="margin-top:18px">Disfrutemos juntos este momento</p>
+    </div>
+  </section>
+
+  <!-- ============ CUENTA REGRESIVA ============ -->
+  <section>
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Falta poco</h2>
+    <p class="sub">Para celebrar juntos</p>
+    <div class="countdown">
+      <div class="cd"><b id="d">--</b><span>días</span></div>
+      <div class="cd"><b id="h">--</b><span>horas</span></div>
+      <div class="cd"><b id="m">--</b><span>min</span></div>
+      <div class="cd"><b id="s">--</b><span>seg</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CUÁNDO Y DÓNDE ============ -->
+  <section>
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Cuándo y dónde</h2>
+    <p class="sub">Guarda la fecha</p>
+    <div class="card">
+      <div class="info-row"><div class="ico">📅</div><div><p><b>Domingo 20 de diciembre de 2026</b></p><small>Recepción a partir de las 3:00 pm</small></div></div>
+      <div class="info-row"><div class="ico">📍</div><div><p><b id="lugar">Casa de la familia</b></p><small id="direccion">Av. Malintzi Pte. 64, San Pedro Muñoztla, Tlax. C.P. 90820</small></div></div>
+      <div class="btns">
+        <a class="btn solid" id="btnMapa" href="#" target="_blank" rel="noopener">📍 Cómo llegar</a>
+        <a class="btn" id="btnCal" href="#" target="_blank" rel="noopener">🗓️ Agendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMA ============ -->
+  <section>
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Programa</h2>
+    <p class="sub">Así vamos a disfrutar la tarde</p>
+    <div class="card">
+      <ul class="timeline">
+        <li><span class="hr">3:00 pm</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Recepción</b><small>Bienvenida y comida</small></span></li>
+        <li><span class="hr">6:00 pm</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Partida de pastel</b><small>Mañanitas y brindis</small></span></li>
+        <li><span class="hr">Después</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Música para disfrutar</b><small>Con lo mejor de los 80</small></span></li>
+      </ul>
+      <p class="nota">Toma tu tiempo, ven a disfrutar</p>
+    </div>
+  </section>
+
+  <!-- ============ RECUERDOS ============ -->
+  <section>
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Recuerdos de los 80</h2>
+    <p class="sub">Así éramos entonces</p>
+    <div class="fotos">
+      <div class="pol"><img src="img/foto1.jpg" alt="Foto de grupo de los años 80 en el bosque"><span>Los 80</span></div>
+      <div class="pol"><img src="img/foto2.jpg" alt="Otra foto de grupo de los años 80"><span>Buenos tiempos</span></div>
+    </div>
+    <p class="dress">Si te animas, ven con un toque <b>ochentero</b>: mezclilla, colores vivos o tu peinado de la época.</p>
+  </section>
+
+  <!-- ============ CONFIRMACIÓN ============ -->
+  <section id="confirmar">
+    <div class="divider"><svg class="flor" width="150" height="38"><use href="#adorno"/></svg></div>
+    <h2>Confirma tu asistencia</h2>
+    <p class="sub">Solo te toma un minuto</p>
+    <div class="card">
+      <form id="rsvp" novalidate>
+        <div class="deadline">Por favor confirma antes del domingo 13 de diciembre</div>
+
+        <p class="q">1. ¿Cuál es tu nombre?</p>
+        <input type="text" id="fNombre" placeholder="Ejemplo: Familia Pérez" autocomplete="name">
+
+        <p class="q">2. ¿Nos acompañas?</p>
+        <div class="yn">
+          <button type="button" class="opt si" data-v="Sí">✔ Sí voy</button>
+          <button type="button" class="opt no" data-v="No">✖ No podré</button>
+        </div>
+
+        <div id="bloqueSi">
+          <p class="q">3. ¿Cuántas personas vienen? <span class="opcional">(contándote a ti)</span></p>
+          <div class="stepper">
+            <button type="button" id="menos" aria-label="Menos personas">−</button>
+            <output id="personas">1</output>
+            <button type="button" id="mas" aria-label="Más personas">+</button>
+          </div>
+        </div>
+
+        <p class="q">Un mensaje para Margarita <span class="opcional">(si quieres)</span></p>
+        <textarea id="fMensaje" placeholder="Unas palabras o un buen deseo para ella"></textarea>
+
+        <p class="err" id="err" role="alert"></p>
+        <button class="btn solid enviar" type="submit">Enviar confirmación</button>
+      </form>
+
+      <div id="gracias">
+        <p class="big">¡Gracias!</p>
+        <p id="graciasTxt">Tu confirmación quedó registrada.</p>
+        <button class="btn" type="button" id="otra" style="width:100%;margin-top:10px">Confirmar a otra persona</button>
+      </div>
+
+      <div id="waBox">¿Prefieres hacerlo por mensaje?<br>
+        <a class="btn" id="btnWa" href="#" target="_blank" rel="noopener" style="margin-top:8px">💬 Confirmar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGALOS ============ -->
+  <section>
+    <div class="card gift">
+      <svg class="flor" width="150" height="38" style="margin:0 auto 6px"><use href="#adorno"/></svg>
+      <h2 style="font-size:36px">Mesa de regalos</h2>
+      <p style="margin:6px 0 0;color:var(--muted)">Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con ella, habrá una mesa de regalos el día de la fiesta.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  ¡Te esperamos con mucho cariño!
+  <span class="sig">Familia de Margarita</span>
+</footer>
+
+<script>
+/* =========================================================
+   CONFIGURACIÓN: aquí se cambian los datos reales
+   ========================================================= */
+const CONFIG = {
+  nombre:      "Margarita",
+  lugar:       "Casa de la familia",
+  direccion:   "Av. Malintzi Pte. 64, San Pedro Muñoztla, Tlax. C.P. 90820",
+  mapsUrl:     "https://share.google/BRsuriKBnJPw5HWk0",
+  fechaFiesta: "2026-12-20T15:00:00-06:00",
+  sheetUrl:    "https://script.google.com/macros/s/AKfycbyRTB46tYTgS5WWa_my-aGZAftwa3mWdu8MDjCXTMe5P-y8tt1D7VexaJelfYsLQvI5/exec",   // URL de Google Apps Script (guarda confirmaciones en Google Sheets)
+  whatsapp:    "522461129891"    // Tu número con lada: "52246XXXXXXX" (muestra el botón de confirmar por WhatsApp)
+};
+
+/* ---------- Datos en pantalla ---------- */
+const $ = id => document.getElementById(id);
+$("nombre").textContent = CONFIG.nombre;
+$("lugar").textContent = CONFIG.lugar;
+$("direccion").textContent = CONFIG.direccion;
+$("btnMapa").href = CONFIG.mapsUrl;
+$("btnCal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+  "&text=" + encodeURIComponent("Cumpleaños 60 de " + CONFIG.nombre) +
+  "&dates=20261220T210000Z/20261221T050000Z" +
+  "&location=" + encodeURIComponent(CONFIG.direccion) +
+  "&details=" + encodeURIComponent("Recepción 3:00 pm · Pastel 6:00 pm · Después, música para disfrutar.");
+if (CONFIG.whatsapp) {
+  $("waBox").style.display = "block";
+  $("btnWa").href = "https://wa.me/" + CONFIG.whatsapp + "?text=" +
+    encodeURIComponent("¡Hola! Confirmo mi asistencia al cumpleaños de " + CONFIG.nombre + ". Somos __ personas.");
+}
+
+/* ---------- Cuenta regresiva ---------- */
+const meta = new Date(CONFIG.fechaFiesta).getTime();
+const pad = n => String(n).padStart(2, "0");
+function tick(){
+  let t = Math.max(0, meta - Date.now());
+  const d = Math.floor(t / 864e5); t -= d * 864e5;
+  const h = Math.floor(t / 36e5);  t -= h * 36e5;
+  const m = Math.floor(t / 6e4);   t -= m * 6e4;
+  $("d").textContent = d; $("h").textContent = pad(h);
+  $("m").textContent = pad(m); $("s").textContent = pad(Math.floor(t / 1e3));
+}
+tick(); setInterval(tick, 1000);
+
+/* ---------- Formulario ---------- */
+let asiste = "", personas = 1;
+const err = $("err"), form = $("rsvp");
+document.querySelectorAll(".opt").forEach(b => b.addEventListener("click", () => {
+  asiste = b.dataset.v;
+  document.querySelectorAll(".opt").forEach(x => x.classList.toggle("on", x === b));
+  $("bloqueSi").style.display = asiste === "Sí" ? "block" : "none";
+  err.textContent = "";
+}));
+const pintar = () => $("personas").textContent = personas;
+$("menos").onclick = () => { personas = Math.max(1, personas - 1); pintar(); };
+$("mas").onclick   = () => { personas = Math.min(20, personas + 1); pintar(); };
+$("fNombre").addEventListener("input", () => err.textContent = "");
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const datos = {
+    fecha: new Date().toISOString(),
+    nombre: $("fNombre").value.trim(),
+    asiste,
+    personas: asiste === "Sí" ? personas : 0,
+    mensaje: $("fMensaje").value.trim()
+  };
+  if (!datos.nombre) { err.textContent = "Escribe tu nombre, por favor."; $("fNombre").focus(); return; }
+  if (!datos.asiste) { err.textContent = "Elige si nos acompañas o no."; return; }
+
+  const boton = form.querySelector(".enviar");
+  boton.textContent = "Enviando…"; boton.disabled = true;
+  try {
+    if (CONFIG.sheetUrl) {
+      await fetch(CONFIG.sheetUrl, { method: "POST", mode: "no-cors", body: JSON.stringify(datos) });
+      $("graciasTxt").textContent = datos.asiste === "Sí"
+        ? "¡Te esperamos, " + datos.nombre + "! Ya te apartamos " + (datos.personas === 1 ? "tu lugar." : datos.personas + " lugares.")
+        : "Gracias por avisarnos, " + datos.nombre + ". ¡Te vamos a extrañar!";
+    } else {
+      $("graciasTxt").textContent = "Vista previa: así se registraría la confirmación de " + datos.nombre +
+        (datos.asiste === "Sí" ? " (" + datos.personas + (datos.personas === 1 ? " persona)." : " personas).") : " (no asistirá).");
+    }
+    form.style.display = "none"; $("gracias").style.display = "block";
+  } catch (x) {
+    err.textContent = "No se pudo enviar. Revisa tu internet e inténtalo otra vez.";
+  } finally {
+    boton.textContent = "Enviar confirmación"; boton.disabled = false;
+  }
+});
+
+$("otra").addEventListener("click", () => {
+  form.reset(); asiste = ""; personas = 1; pintar();
+  document.querySelectorAll(".opt").forEach(x => x.classList.remove("on"));
+  $("bloqueSi").style.display = "block";
+  $("gracias").style.display = "none"; form.style.display = "block";
+});
+</script>
+</body>
+</html>
