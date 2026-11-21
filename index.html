@@ -7,7 +7,7 @@
 
 <!-- Vista previa al compartir por WhatsApp (funciona al publicar en tu propio hosting) -->
 <meta property="og:title" content="¡Regresamos a los 80! Los 60 de Margarita">
-<meta property="og:description" content="Domingo 20 de diciembre · 3:00 pm. Mira el itinerario, el outfit ochentero y confirma aquí.">
+<meta property="og:description" content="Domingo 20 de diciembre · 2:00 pm. Mira el itinerario, el premio al mejor outfit ochentero y confirma aquí.">
 <meta property="og:image" content="https://pablo-codedioni.github.io/los60demargarita/img/portada-whatsapp.jpg">
 <meta property="og:url" content="https://pablo-codedioni.github.io/los60demargarita/">
 <meta property="og:type" content="website">
@@ -145,6 +145,7 @@
   #gracias .big{font-family:Pacifico,cursive;color:var(--pink)}
   footer .sig{font-family:Pacifico,cursive;color:var(--purple)}
   .deco{position:absolute;pointer-events:none}
+  .premio{max-width:420px;margin:-8px auto 22px;text-align:center;background:var(--yellow);border:3px solid var(--ink);border-radius:14px;padding:12px 16px;font-weight:600;font-size:18px;box-shadow:5px 5px 0 var(--pink);transform:rotate(-1.5deg)}
 </style>
 </head>
 <body>
@@ -209,7 +210,7 @@
   <p class="name" id="nombre">Margarita</p>
   <p class="apellidos">Cahuantzi Zecua</p>
   <p class="lema">¡No te lo puedes perder!<br>Una fiesta única</p>
-  <div class="date-pill">Domingo 20 de diciembre · 3:00 pm</div>
+  <div class="date-pill">Domingo 20 de diciembre · 2:00 pm</div>
 </header>
 
 <main class="wrap">
@@ -244,7 +245,7 @@
     <h2>Cuándo y dónde</h2>
     <p class="sub">Guarda la fecha</p>
     <div class="card">
-      <div class="info-row"><div class="ico">📅</div><div><p><b>Domingo 20 de diciembre de 2026</b></p><small>Recepción a partir de las 3:00 pm</small></div></div>
+      <div class="info-row"><div class="ico">📅</div><div><p><b>Domingo 20 de diciembre de 2026</b></p><small>Recepción: 2:00 pm</small></div></div>
       <div class="info-row"><div class="ico">📍</div><div><p><b id="lugar">Casa de la familia</b></p><small id="direccion">Av. Malintzi Pte. 62, San Pedro Muñoztla, Chiautempan, Tlax. C.P. 90820</small></div></div>
       <div class="btns">
         <a class="btn solid" id="btnMapa" href="#" target="_blank" rel="noopener">📍 Cómo llegar</a>
@@ -260,9 +261,9 @@
     <p class="sub">Así vamos a disfrutar la tarde</p>
     <div class="card">
       <ul class="timeline">
-        <li><span class="hr">3:00 pm</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Recepción</b><small>Bienvenida y comida</small></span></li>
+        <li><span class="hr">2:00 pm</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Recepción</b><small>Bienvenida y comida</small></span></li>
         <li><span class="hr">6:00 pm</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Partida de pastel</b><small>Mañanitas y brindis</small></span></li>
-        <li><span class="hr">Después</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>Música ochentera para disfrutar</b><small>¡A bailar con lo mejor de los 80!</small></span></li>
+        <li><span class="hr">Después</span><svg class="dot" width="26" height="26"><use href="#margarita"/></svg><span class="txt"><b>¡Baile ochentero!</b><small>Con sorpresas, actividades y premio al mejor outfit</small></span></li>
       </ul>
       <p class="nota">Toma tu tiempo, ven a disfrutar</p>
     </div>
@@ -284,6 +285,7 @@
   <section>
     <h2>Outfit ochentero</h2>
     <p class="sub">¡Ven vestido como en los 80! Entre más ochentero, mejor</p>
+    <div class="premio">🏆 ¡Habrá <b>premio</b> al mejor outfit ochentero!</div>
     <div class="card outfit-card">
       <svg width="120" height="77" style="display:block;margin:0 auto"><use href="#casete"/></svg>
       <div class="chips">
@@ -291,7 +293,7 @@
         <span class="chip">Peinados con volumen</span><span class="chip">Chamarras de colores</span><span class="chip">Diademas y muñequeras</span>
         <span class="chip">Lentes de colores</span><span class="chip">Tenis blancos</span>
       </div>
-      <p class="nota">¡Saca lo mejor de tu clóset ochentero!</p>
+      <p class="nota">¡Saca lo mejor de tu clóset y gana el premio!</p>
     </div>
   </section>
 
@@ -345,8 +347,9 @@
   <section>
     <div class="card gift">
       <svg class="flor" width="150" height="38" style="margin:0 auto 6px"><use href="#adorno"/></svg>
-      <h2 style="font-size:36px">Mesa de regalos</h2>
-      <p style="margin:6px 0 0;color:var(--muted)">Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con ella, habrá una mesa de regalos el día de la fiesta.</p>
+      <h2 style="font-size:36px">Regalos y cartas</h2>
+      <p style="margin:6px 0 0;color:var(--muted)">Tu presencia es nuestro mejor regalo. Si deseas tener un detalle con ella, habrá una <b style="color:var(--ink)">mesa de regalos</b>.</p>
+      <p style="margin:10px 0 0;color:var(--muted)">También habrá un <b style="color:var(--ink)">rincón de cartas</b> 💌 para que le escribas un mensaje bonito a Margarita.</p>
     </div>
   </section>
 </main>
@@ -365,7 +368,7 @@ const CONFIG = {
   lugar:       "Casa de la familia",
   direccion:   "Av. Malintzi Pte. 62, San Pedro Muñoztla, Chiautempan, Tlax. C.P. 90820",
   mapsUrl:     "https://share.google/8eyWXkivpntHGwEBG",
-  fechaFiesta: "2026-12-20T15:00:00-06:00",
+  fechaFiesta: "2026-12-20T14:00:00-06:00",
   sheetUrl:    "https://script.google.com/macros/s/AKfycbyRTB46tYTgS5WWa_my-aGZAftwa3mWdu8MDjCXTMe5P-y8tt1D7VexaJelfYsLQvI5/exec",   // URL de Google Apps Script (guarda confirmaciones en Google Sheets)
   whatsapp:    "522461129891"    // Tu número con lada: "52246XXXXXXX" (muestra el botón de confirmar por WhatsApp)
 };
@@ -378,9 +381,9 @@ $("direccion").textContent = CONFIG.direccion;
 $("btnMapa").href = CONFIG.mapsUrl;
 $("btnCal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
   "&text=" + encodeURIComponent("Cumpleaños 60 de " + CONFIG.nombre) +
-  "&dates=20261220T210000Z/20261221T050000Z" +
+  "&dates=20261220T200000Z/20261221T050000Z" +
   "&location=" + encodeURIComponent(CONFIG.direccion) +
-  "&details=" + encodeURIComponent("Recepción 3:00 pm · Pastel 6:00 pm · Después, música para disfrutar.");
+  "&details=" + encodeURIComponent("Recepción 2:00 pm · Pastel 6:00 pm · Después, baile ochentero con sorpresas. ¡Premio al mejor outfit!");
 if (CONFIG.whatsapp) {
   $("waBox").style.display = "block";
   $("btnWa").href = "https://wa.me/" + CONFIG.whatsapp + "?text=" +
